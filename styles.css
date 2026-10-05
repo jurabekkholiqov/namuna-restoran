@@ -1,0 +1,78 @@
+/* Custom Luxury Styles & Motion Video Reel Animations */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0A0C10;
+}
+::-webkit-scrollbar-thumb {
+    background: #4A3B10;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+}
+
+/* Page Section Animations */
+.page-section {
+    opacity: 0.15;
+    transform: scale(0.97) translateY(20px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-section.active-page-section {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Side Navigation Dot Buttons */
+.dot-btn.active span:last-child {
+    background-color: #D4AF37 !important;
+    border-color: #D4AF37 !important;
+    box-shadow: 0 0 14px rgba(212, 175, 55, 0.9);
+    transform: scale(1.3);
+}
+
+/* Interior Category Tabs */
+.interior-tab.active {
+    background: #D4AF37 !important;
+    color: #000000 !important;
+    border-color: #D4AF37 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.interior-card {
+    transition: all 0.4s ease;
+}
+.interior-card.hidden-card {
+    display: none !important;
+}
+
+/* Menu Items Transition */
+.menu-item {
+    transition: all 0.4s ease;
+}
+.menu-item.hidden-item {
+    display: none !important;
+}
+
+@keyframes pulseSlow {
+    0%, 100% {
+        opacity: 0.25;
+        transform: scale(1.02);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.05);
+    }
+}
+.animate-pulse-slow {
+    animation: pulseSlow 8s ease-in-out infinite;
+}
