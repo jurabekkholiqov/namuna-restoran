@@ -1,4 +1,4 @@
-// Main Application JavaScript for "FAYZ" To'yxonasi & Banquet Hall
+// Main Application JavaScript for "NAMUNA" Restoran & Banquet Hall
 
 let currentPage = 1;
 const totalPages = 7;
